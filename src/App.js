@@ -1,10 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Menu from './components/Menu';
+import Details from './components/Details';
+import Cards from './components/Cards';
 
 function App() {
   return (
-    <div className="App">
+     <div>
+        <Menu />
+        <Cards />
+        <Details />
+    </div>
+  );
+}
+
+export default App;
+/*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +30,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div>*/
