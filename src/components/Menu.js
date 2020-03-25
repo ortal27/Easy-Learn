@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutGame from './AboutGame';
 
 function Menu(){
     return(
@@ -8,9 +9,10 @@ function Menu(){
                 <li><a href="#Shere">shere us</a></li>
                 <li><a href="#Contact">Contact us</a></li>
                 <li><a href="#Settings">Settings game</a></li>
-                <li><a href="#About">About game</a></li>            
+                <li onClick={AboutGame}><a href="#About">About game</a></li> 
+                <AboutGame/>           
             </ul>
-        </header>
+        </header> 
     );
 }
 

@@ -51,7 +51,7 @@ ul{
   width: 320px;
   padding: 40px;
   border: 5px solid black;
-  margin: 30px 60px;
+  margin: 50px 70px;
   float: right;
 }
 .BoxDetail h3{
@@ -61,19 +61,18 @@ ul{
 .BoxDetail li{
   padding: 10px;
 }
-.Cards{
-  width: 700px;
-  padding: 30px;
-  margin: 30px;
-}
-.Cards h2{
+
+h2{
   font-size: 30px;
   color: steelblue;
-  text-align: center;
+  text-align: left;
+  padding: 20px 45px;
+  margin: 40px;
 }
 
 .LeftCards {
   float: left;
+  padding-left: 70px;
 }
 .RightCards {
   float: left;
@@ -99,37 +98,16 @@ ul{
   font-size: 20px;
   text-align: center;
 }
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AboutGame{ 
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+  background-color: rgb(125, 182, 184);
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.XButton{
+font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
