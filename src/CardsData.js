@@ -19,15 +19,6 @@ const CardsData = [
         word: 'Bare',
         translation: 'חשוף'
     }]
-//     {
-//     side: "Left",
-//     words: ['Affect', 'Break', 'Advice', 'Bare'],
-//     style: "LeftCards"
-// }, 
-// {
-//     side: "Right",
-//     words: ['להשפיע', 'להפר', 'עצה', 'חשוף'],
-//     style: "RightCards"
-// }]
+
 
 export default CardsData;

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 body{
   background-color: rgb(230, 227, 227);
@@ -96,12 +97,24 @@ h2{
 .AboutGame{ 
   width: 50%;
   position: absolute;
+  margin: 150px auto;
+  left: 250px;
+  right: 250px;
   text-align: center;
   padding: 30px;
   font-size: 25px;
   background-color: rgb(125, 182, 184);
-  display: none;
+}
+.AboutGame h2{
+  text-align: center;
+
 }
 .XButton{
 font-size: 20px;
+float: right;
 }
+
+.Icons{
+  float: right;
+}
+
