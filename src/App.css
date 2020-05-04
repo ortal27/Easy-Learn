@@ -5,6 +5,7 @@
 }
 body{
   background-color: rgb(230, 227, 227);
+
 }
 
 .Menu{
@@ -52,12 +53,13 @@ ul{
   width: 320px;
   padding: 40px;
   border: 5px solid black;
-  margin: 50px 70px;
+  margin: 150px 70px;
   float: right;
 }
 .BoxDetail h3{
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 .BoxDetail li{
   padding: 10px;
@@ -97,7 +99,7 @@ h2{
 .AboutGame{ 
   width: 50%;
   position: absolute;
-  margin: 150px auto;
+  margin: 0px auto;
   left: 250px;
   right: 250px;
   text-align: center;
@@ -109,12 +111,58 @@ h2{
   text-align: center;
 
 }
-.XButton{
-font-size: 20px;
-float: right;
+.XButton , .xContact{
+  font-size: 20px;
+  float: right;
 }
 
 .Icons{
   float: right;
 }
+.Content{
+  width: 50%;
+  position: absolute;
+  margin: 0px auto;
+  left: 250px;
+  right: 250px;
+  padding: 15px;
+  font-size: 25px;
+  background-color: rgb(125, 182, 184);
+}
+.InnerContent{
+  text-align: center;
+  /* padding: 30px; */
+}
+.InnerContent li{
+  padding: 7px;
+}
+.InnerContent .Gender{
+  color: indigo;
+  font-size: 20px;
+}
 
+.Game{
+  width: 50%;
+  position: absolute;
+  margin: 150px auto;
+  left: 250px;
+  right: 250px;
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+  background-color: rgb(125, 182, 184);
+}
+.startButton{
+  font-size: 25px;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+.Game li{
+  padding: 10px;
+}
+.Game h2{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
