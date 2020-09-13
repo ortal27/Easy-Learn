@@ -1,0 +1,16 @@
+.List{
+  width: 58px;
+  /* display: flex;
+  flex-flow: column; */
+  height: 100%;
+  margin: 10px 40px;
+  float: left;
+
+}
+
+@media (min-width: 500px){
+    .List{
+      float: left;
+      padding-left: 70px;
+    }
+}

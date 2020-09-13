@@ -1,0 +1,25 @@
+.BoxDetail{
+    width: auto;
+    height: 100%;
+    border: 5px solid black;
+    margin: 20px;
+    margin-top: 80px;
+  }
+  .BoxDetail h3{
+    font-size: 15פס;
+    font-weight: bold;
+    text-align: center;
+  }
+  .BoxDetail li{
+    padding: 4px;
+  }
+
+  @media (min-width: 500px){
+    .BoxDetail{
+      width: 320px;
+      padding: 40px;
+      border: 5px solid black;
+      margin: 150px 70px;
+      float: right;
+    }
+  }

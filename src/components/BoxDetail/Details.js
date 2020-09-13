@@ -1,4 +1,5 @@
 import React from 'react';
+import './BoxDetail.css';
 
 function Details(props){
     return(
@@ -7,9 +8,7 @@ function Details(props){
             <ul>
                 <form>
                     <li>User name:<input disabled={true} type="text" defaultValue={props.name}></input></li>
-                    <li>Correct answers:<input type="text"></input></li>
-                    <li>failures:<input type="text"></input></li>
-                    <li className="Time">Timer:</li>
+                    <li className="Timer">Timer:<h3>{props.hours}:{props.minuts}:{props.seconds}</h3></li>
                 </form>
             </ul>
         </div>

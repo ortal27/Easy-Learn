@@ -1,0 +1,32 @@
+.ToolbarProps{
+    padding: 70px 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+/* .ToolbarProps h2{
+    padding-top: 30px;
+}
+.ToolbarProps h1{
+    padding-top: 30px;
+} */
+
+.ToolbarProps input {
+    padding: 10px;
+    color: green;
+}
+
+@media (min-width: 500px){
+    .ToolbarProps{
+        width: 50%;
+        position: absolute;
+        margin: 130px auto;
+        left: 250px;
+        right: 250px;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+        height: 500px;
+    }
+}
