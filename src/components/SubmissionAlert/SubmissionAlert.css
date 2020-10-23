@@ -10,17 +10,22 @@
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
-    align-items: center;
+    text-align: center;
 }
 
-.SubmissionAlert button{
+.Buttons {
+    display: inline-flex;
+    align-items: center;
+}
+/* .SubmissionAlert button{
     color: #000;
     background-color: #cccc;
     font-size: small;
     padding: 10px;
     margin: 10px;
+    display: ;
     
-}
+} */
 
 @media (min-width: 600px) {
     .SubmissionAlert {

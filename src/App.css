@@ -101,23 +101,3 @@ ul{
   color: indigo;
   font-size: 20px;
 }
-
-/* .Game{
-  width: 50%;
-  position: absolute;
-  margin: 150px auto;
-  left: 250px;
-  right: 250px;
-  text-align: center;
-  padding: 30px;
-  font-size: 25px;
-  background-color: rgb(125, 182, 184);
-} */
-
-
-.Game h2{
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-

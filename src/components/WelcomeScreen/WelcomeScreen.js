@@ -25,13 +25,20 @@ const WelcomeScreen = (props) => {
 
     return(
         <div className="WelcomeScreenBox">
-            <form action="/action_page.php" className="WelcomeScreen">
+            <form className="WelcomeScreen">
                 <h1>Welcome to Easy-Learn Game!</h1>
+                <div className="Instructions">
+                    <h3>Game Instructions</h3>
+                    <p>Select one card in English and one card in Hebrew.
+                        The goal of the game is to match the max pairs with the same meaning.
+                        Good Louck ;)
+                    </p>
+                </div>
                 <h2>To play a new game insert:</h2>
                 <label >Username:</label>
                 <input ref={inputRef} type="text" value={nameState.name} onChange={handlerChange} placeholder="Please enter name" required/>
                 <button className="startButton" onClick={start}>Click to start!</button>
-                <button onClick={props.about}>About</button><button>Settings</button>
+                {/* <button>Settings</button> */}
             </form>
         </div>
     );

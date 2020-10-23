@@ -1,0 +1,23 @@
+.Button {
+    padding: 10px;
+    margin: 15px auto;
+    display: block;
+    background-color: rgb(93, 92, 92);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    font: inherit;
+
+}
+
+.Button:disabled {
+    cursor: not-allowed;
+}
+
+@media (min-width: 500px){
+    .Button {
+        margin: 5px auto;
+        padding: 15px;
+        font-size: large;
+    }
+}

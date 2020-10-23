@@ -1,12 +1,13 @@
-class JS {
-    constructor(msg){
-        this.message = msg
-    }
-    hello() {
-        console.log(this.message)
-    }
+const fn = () => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            console.log('iam called')
+            // res()
+        }, 3000)
+     })
 }
 
-const js = new JS('123')
-js.hello() //like java => this === instance
-js.hello.bind({message: '321'})()
+(async () => {
+    await fn()
+    console.log('done')
+})()

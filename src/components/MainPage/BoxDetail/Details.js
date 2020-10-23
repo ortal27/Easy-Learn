@@ -8,7 +8,7 @@ function Details(props){
             <ul>
                 <form>
                     <li>User name:<input disabled={true} type="text" defaultValue={props.name}></input></li>
-                    <li className="Timer">Timer:<h3>{props.hours}:{props.minuts}:{props.seconds}</h3></li>
+                    <li className="Timer">Timer: {props.hours}:{props.minuts}:{props.seconds}</li>
                 </form>
             </ul>
         </div>

@@ -1,0 +1,11 @@
+.List{
+  display: inline;
+  float: left;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 500px){
+    .List{
+      margin: 0 0 0 50px;
+    }
+}

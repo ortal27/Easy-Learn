@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-    baseURL: '' //TODO - add firebase
+    baseURL: 'https://react-easy-learn.firebaseio.com/' 
 });
 
 export default instance;

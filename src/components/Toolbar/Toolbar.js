@@ -2,43 +2,30 @@ import React from 'react';
 import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
 import './Toolbar.css';
 import DrawerToggle from '../Navigation/SideDrawer/DrawerToggle/DrawerToggle';
-import AboutGame from './ToolbarProps/AboutGame';
+import { withRouter } from 'react-router-dom';
 
 
 class Toolbar extends React.Component{
     state = {
-        isAboutClicked: false,
-        iconsOver: false,
-        isContact: false,
+        currPath: '/'
     }
 
-    aboutClick = () => {
-        this.setState(state => {
-            console.log(" about was clicked")
-          return {
-            isAboutClicked: !state.isAboutClicked
-          }
-        })
+    async componentDidUpdate() {
+        if(this.state.currPath !== this.props.location.pathname){
+            await this.setState({currPath: this.props.location.pathname});
+        }
     }
-
-    render(){
-        const about = <AboutGame  />
-        
+    render(){    
         return(
             <header className={"Toolbar"}> 
                 <DrawerToggle clicked={this.props.drawerToggleClicked} />
-                <div style={{height: '80%'}}>Easy-Learn Game</div>
-                <nav  className={"DesktopOnly"}>
-                    <NavigationItems about={this.aboutClick}/>
+                <div>Easy-Learn Game</div>
+                <nav className={"DesktopOnly"}>
+                    <NavigationItems currPath={this.state.currPath}/>
                 </nav>
-                {this.state.isAboutClicked ? about : null}
-                {/* <li onMouseOver={props.shere}><a href="#Share" >Share us</a></li>
-                <li onClick={props.contact}><a href="#Contact">Contact us</a></li> 
-                <li><a href="#Settings">Settings game</a></li>
-                <li onClick={props.about}><a href="#About">About game</a></li>  */}
             </header> 
         );
     }
 }
 
-export default Toolbar;
+export default withRouter(Toolbar);
